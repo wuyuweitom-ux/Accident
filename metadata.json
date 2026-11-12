@@ -1,0 +1,6 @@
+{
+  "name": "Accident Balancer 營造勞安風險評估平台",
+  "description": "營造與工程高處墜落勞安風險評估系統：具備KNN相似事故比對、情境財務與工期推估、留一法MAE驗證、Shapley貢獻值SHAP分解、本地與AI RAG檢索與法規改善建議。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
