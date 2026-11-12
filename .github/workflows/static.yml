@@ -26,10 +26,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build production bundle
         run: npm run build
@@ -40,7 +39,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload compiled dist directory instead of raw source code
           path: './dist'
 
   deploy:
